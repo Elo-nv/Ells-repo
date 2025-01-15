@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./wp11912855-scary-space-wallpapers.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>Calculator</header>
+    <div id="calc-container">
+        <div id="screen-container" class="important"></div>
+        <div id="keypad-container">
+            <div id="num-equal-container">
+                <div id="numpad-container">
+                    <div id="one-container" class="important" onclick="updateStr(this)">1</div>
+                    <div id="two-container" class="important" onclick="updateStr(this)">2</div>
+                    <div id="three-container" class="important" onclick="updateStr(this)">3</div>
+                    <div id="four-container" class="important" onclick="updateStr(this)">4</div>
+                    <div id="five-container" class="important" onclick="updateStr(this)">5</div>
+                    <div id="six-container" class="important" onclick="updateStr(this)">6</div>
+                    <div id="seven-container" class="important" onclick="updateStr(this)">7</div>
+                    <div id="eight-container" class="important" onclick="updateStr(this)">8</div>
+                    <div id="nine-container" class="important" onclick="updateStr(this)">9</div>
+                </div>
+                <div id="zero-equal-clear-container">
+                    <div id="zero-container" class="important" onclick="updateStr(this)">0</div>
+                    <div id="equal-container" class="important">=</div>
+                    <div id="clear-container" class="important" onclick="clearStr()">Clear</div>
+                </div>
+            </div>
+            <div id="function-container">
+                <div id="add-container" class="important func" onclick="updateStr(this)">+</div>
+                <div id="minus-container" class="important func" onclick="updateStr(this)">-</div>
+                <div id="multiply-container" class="important func" onclick="updateStr(this)">x</div>
+                <div id="divide-container" class="important func" onclick="updateStr(this)">/</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
